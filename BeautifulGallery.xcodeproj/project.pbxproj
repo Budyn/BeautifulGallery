@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		93B0156CA96AFE76FBDAEF75 /* libPods-BeautifulGalleryTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CDCC3F897AD27478CD4B47C6 /* libPods-BeautifulGalleryTests.a */; };
 		AFFEEEFE1ECF317B00159090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFEEEFD1ECF317B00159090 /* main.m */; };
 		AFFEEF011ECF317B00159090 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFEEF001ECF317B00159090 /* AppDelegate.m */; };
 		AFFEEF071ECF317B00159090 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFFEEF051ECF317B00159090 /* Main.storyboard */; };
 		AFFEEF091ECF317B00159090 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFFEEF081ECF317B00159090 /* Assets.xcassets */; };
 		AFFEEF0C1ECF317B00159090 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFFEEF0A1ECF317B00159090 /* LaunchScreen.storyboard */; };
 		AFFEEF171ECF317B00159090 /* BeautifulGalleryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFEEF161ECF317B00159090 /* BeautifulGalleryTests.m */; };
-		AFFEEF231ECF326A00159090 /* GalleryCollectionCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFEEF221ECF326A00159090 /* GalleryCollectionCollectionViewController.m */; };
+		AFFEEF261ECF369600159090 /* GalleryCollectionCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFEEF251ECF369600159090 /* GalleryCollectionCollectionViewController.m */; };
+		AFFEEF2B1ECF36DA00159090 /* GalleryCollectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFEEF2A1ECF36DA00159090 /* GalleryCollectionModel.m */; };
+		D24DB331D8295179C5A3B987 /* libPods-BeautifulGallery.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B9B914DD87A4A590845154 /* libPods-BeautifulGallery.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +30,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1415EC5E3A4517031BAAB143 /* Pods-BeautifulGalleryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeautifulGalleryTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BeautifulGalleryTests/Pods-BeautifulGalleryTests.debug.xcconfig"; sourceTree = "<group>"; };
+		17B9B914DD87A4A590845154 /* libPods-BeautifulGallery.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BeautifulGallery.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		748A2C6AD012A6175F6BAE63 /* Pods-BeautifulGallery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeautifulGallery.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BeautifulGallery/Pods-BeautifulGallery.debug.xcconfig"; sourceTree = "<group>"; };
+		90D465F9066010A869B4449F /* Pods-BeautifulGalleryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeautifulGalleryTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BeautifulGalleryTests/Pods-BeautifulGalleryTests.release.xcconfig"; sourceTree = "<group>"; };
 		AFFEEEF91ECF317B00159090 /* BeautifulGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeautifulGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFFEEEFD1ECF317B00159090 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AFFEEEFF1ECF317B00159090 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -38,8 +45,12 @@
 		AFFEEF121ECF317B00159090 /* BeautifulGalleryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeautifulGalleryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFFEEF161ECF317B00159090 /* BeautifulGalleryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeautifulGalleryTests.m; sourceTree = "<group>"; };
 		AFFEEF181ECF317B00159090 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AFFEEF211ECF326A00159090 /* GalleryCollectionCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GalleryCollectionCollectionViewController.h; path = ../GalleryCollectionCollectionViewController.h; sourceTree = "<group>"; };
-		AFFEEF221ECF326A00159090 /* GalleryCollectionCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GalleryCollectionCollectionViewController.m; path = ../GalleryCollectionCollectionViewController.m; sourceTree = "<group>"; };
+		AFFEEF241ECF369600159090 /* GalleryCollectionCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GalleryCollectionCollectionViewController.h; path = "View Controllers/GalleryCollectionCollectionViewController.h"; sourceTree = "<group>"; };
+		AFFEEF251ECF369600159090 /* GalleryCollectionCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GalleryCollectionCollectionViewController.m; path = "View Controllers/GalleryCollectionCollectionViewController.m"; sourceTree = "<group>"; };
+		AFFEEF291ECF36DA00159090 /* GalleryCollectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryCollectionModel.h; sourceTree = "<group>"; };
+		AFFEEF2A1ECF36DA00159090 /* GalleryCollectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryCollectionModel.m; sourceTree = "<group>"; };
+		BE3B2EE029BFF2BBBA03C743 /* Pods-BeautifulGallery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeautifulGallery.release.xcconfig"; path = "Pods/Target Support Files/Pods-BeautifulGallery/Pods-BeautifulGallery.release.xcconfig"; sourceTree = "<group>"; };
+		CDCC3F897AD27478CD4B47C6 /* libPods-BeautifulGalleryTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BeautifulGalleryTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D24DB331D8295179C5A3B987 /* libPods-BeautifulGallery.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,18 +66,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93B0156CA96AFE76FBDAEF75 /* libPods-BeautifulGalleryTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		80ACB2490447213FC4DC1E08 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				17B9B914DD87A4A590845154 /* libPods-BeautifulGallery.a */,
+				CDCC3F897AD27478CD4B47C6 /* libPods-BeautifulGalleryTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AFFEEEF01ECF317B00159090 = {
 			isa = PBXGroup;
 			children = (
 				AFFEEEFB1ECF317B00159090 /* BeautifulGallery */,
 				AFFEEF151ECF317B00159090 /* BeautifulGalleryTests */,
 				AFFEEEFA1ECF317B00159090 /* Products */,
+				E220CBEB52E2046833E35DDC /* Pods */,
+				80ACB2490447213FC4DC1E08 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,10 +105,10 @@
 		AFFEEEFB1ECF317B00159090 /* BeautifulGallery */ = {
 			isa = PBXGroup;
 			children = (
+				AFFEEF281ECF36B500159090 /* Models */,
+				AFFEEF271ECF369D00159090 /* View Controllers */,
 				AFFEEEFF1ECF317B00159090 /* AppDelegate.h */,
 				AFFEEF001ECF317B00159090 /* AppDelegate.m */,
-				AFFEEF211ECF326A00159090 /* GalleryCollectionCollectionViewController.h */,
-				AFFEEF221ECF326A00159090 /* GalleryCollectionCollectionViewController.m */,
 				AFFEEF051ECF317B00159090 /* Main.storyboard */,
 				AFFEEF081ECF317B00159090 /* Assets.xcassets */,
 				AFFEEF0A1ECF317B00159090 /* LaunchScreen.storyboard */,
@@ -111,6 +135,35 @@
 			path = BeautifulGalleryTests;
 			sourceTree = "<group>";
 		};
+		AFFEEF271ECF369D00159090 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AFFEEF241ECF369600159090 /* GalleryCollectionCollectionViewController.h */,
+				AFFEEF251ECF369600159090 /* GalleryCollectionCollectionViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		AFFEEF281ECF36B500159090 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AFFEEF291ECF36DA00159090 /* GalleryCollectionModel.h */,
+				AFFEEF2A1ECF36DA00159090 /* GalleryCollectionModel.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		E220CBEB52E2046833E35DDC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				748A2C6AD012A6175F6BAE63 /* Pods-BeautifulGallery.debug.xcconfig */,
+				BE3B2EE029BFF2BBBA03C743 /* Pods-BeautifulGallery.release.xcconfig */,
+				1415EC5E3A4517031BAAB143 /* Pods-BeautifulGalleryTests.debug.xcconfig */,
+				90D465F9066010A869B4449F /* Pods-BeautifulGalleryTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -118,9 +171,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AFFEEF1B1ECF317B00159090 /* Build configuration list for PBXNativeTarget "BeautifulGallery" */;
 			buildPhases = (
+				A2414B5F3312FBBB947889EC /* [CP] Check Pods Manifest.lock */,
 				AFFEEEF51ECF317B00159090 /* Sources */,
 				AFFEEEF61ECF317B00159090 /* Frameworks */,
 				AFFEEEF71ECF317B00159090 /* Resources */,
+				2002193CEA7E8CA1D3BA3DF8 /* [CP] Embed Pods Frameworks */,
+				91C9D1A96F8B54A7A473809F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -135,9 +191,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AFFEEF1E1ECF317B00159090 /* Build configuration list for PBXNativeTarget "BeautifulGalleryTests" */;
 			buildPhases = (
+				C92DE4EE71860E8E5CC1BCC5 /* [CP] Check Pods Manifest.lock */,
 				AFFEEF0E1ECF317B00159090 /* Sources */,
 				AFFEEF0F1ECF317B00159090 /* Frameworks */,
 				AFFEEF101ECF317B00159090 /* Resources */,
+				027DE04C3AE2BB320CC50A5D /* [CP] Embed Pods Frameworks */,
+				E0FAAB8ED5F48AA327C3087E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -210,14 +269,108 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		027DE04C3AE2BB320CC50A5D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BeautifulGalleryTests/Pods-BeautifulGalleryTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2002193CEA7E8CA1D3BA3DF8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BeautifulGallery/Pods-BeautifulGallery-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91C9D1A96F8B54A7A473809F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BeautifulGallery/Pods-BeautifulGallery-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2414B5F3312FBBB947889EC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C92DE4EE71860E8E5CC1BCC5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E0FAAB8ED5F48AA327C3087E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BeautifulGalleryTests/Pods-BeautifulGalleryTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AFFEEEF51ECF317B00159090 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFFEEF2B1ECF36DA00159090 /* GalleryCollectionModel.m in Sources */,
 				AFFEEF011ECF317B00159090 /* AppDelegate.m in Sources */,
 				AFFEEEFE1ECF317B00159090 /* main.m in Sources */,
-				AFFEEF231ECF326A00159090 /* GalleryCollectionCollectionViewController.m in Sources */,
+				AFFEEF261ECF369600159090 /* GalleryCollectionCollectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +506,7 @@
 		};
 		AFFEEF1C1ECF317B00159090 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 748A2C6AD012A6175F6BAE63 /* Pods-BeautifulGallery.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = AD6M7L74H7;
@@ -366,6 +520,7 @@
 		};
 		AFFEEF1D1ECF317B00159090 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE3B2EE029BFF2BBBA03C743 /* Pods-BeautifulGallery.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = AD6M7L74H7;
@@ -379,6 +534,7 @@
 		};
 		AFFEEF1F1ECF317B00159090 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1415EC5E3A4517031BAAB143 /* Pods-BeautifulGalleryTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = AD6M7L74H7;
@@ -392,6 +548,7 @@
 		};
 		AFFEEF201ECF317B00159090 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90D465F9066010A869B4449F /* Pods-BeautifulGalleryTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = AD6M7L74H7;

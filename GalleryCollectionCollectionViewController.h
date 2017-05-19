@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  GalleryCollectionCollectionViewController.h
 //  BeautifulGallery
 //
 //  Created by Daniel Budynski on 19/05/2017.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface GalleryCollectionCollectionViewController : UICollectionViewController
 
 @end
-

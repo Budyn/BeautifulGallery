@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		AFFEEEFE1ECF317B00159090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFEEEFD1ECF317B00159090 /* main.m */; };
 		AFFEEF011ECF317B00159090 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFEEF001ECF317B00159090 /* AppDelegate.m */; };
-		AFFEEF041ECF317B00159090 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFEEF031ECF317B00159090 /* ViewController.m */; };
 		AFFEEF071ECF317B00159090 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFFEEF051ECF317B00159090 /* Main.storyboard */; };
 		AFFEEF091ECF317B00159090 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFFEEF081ECF317B00159090 /* Assets.xcassets */; };
 		AFFEEF0C1ECF317B00159090 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFFEEF0A1ECF317B00159090 /* LaunchScreen.storyboard */; };
 		AFFEEF171ECF317B00159090 /* BeautifulGalleryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFEEF161ECF317B00159090 /* BeautifulGalleryTests.m */; };
+		AFFEEF231ECF326A00159090 /* GalleryCollectionCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFEEF221ECF326A00159090 /* GalleryCollectionCollectionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,8 +31,6 @@
 		AFFEEEFD1ECF317B00159090 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AFFEEEFF1ECF317B00159090 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AFFEEF001ECF317B00159090 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		AFFEEF021ECF317B00159090 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		AFFEEF031ECF317B00159090 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		AFFEEF061ECF317B00159090 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AFFEEF081ECF317B00159090 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFFEEF0B1ECF317B00159090 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -40,6 +38,8 @@
 		AFFEEF121ECF317B00159090 /* BeautifulGalleryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeautifulGalleryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFFEEF161ECF317B00159090 /* BeautifulGalleryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeautifulGalleryTests.m; sourceTree = "<group>"; };
 		AFFEEF181ECF317B00159090 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AFFEEF211ECF326A00159090 /* GalleryCollectionCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GalleryCollectionCollectionViewController.h; path = ../GalleryCollectionCollectionViewController.h; sourceTree = "<group>"; };
+		AFFEEF221ECF326A00159090 /* GalleryCollectionCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GalleryCollectionCollectionViewController.m; path = ../GalleryCollectionCollectionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +83,8 @@
 			children = (
 				AFFEEEFF1ECF317B00159090 /* AppDelegate.h */,
 				AFFEEF001ECF317B00159090 /* AppDelegate.m */,
-				AFFEEF021ECF317B00159090 /* ViewController.h */,
-				AFFEEF031ECF317B00159090 /* ViewController.m */,
+				AFFEEF211ECF326A00159090 /* GalleryCollectionCollectionViewController.h */,
+				AFFEEF221ECF326A00159090 /* GalleryCollectionCollectionViewController.m */,
 				AFFEEF051ECF317B00159090 /* Main.storyboard */,
 				AFFEEF081ECF317B00159090 /* Assets.xcassets */,
 				AFFEEF0A1ECF317B00159090 /* LaunchScreen.storyboard */,
@@ -215,9 +215,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFFEEF041ECF317B00159090 /* ViewController.m in Sources */,
 				AFFEEF011ECF317B00159090 /* AppDelegate.m in Sources */,
 				AFFEEEFE1ECF317B00159090 /* main.m in Sources */,
+				AFFEEF231ECF326A00159090 /* GalleryCollectionCollectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +357,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = AD6M7L74H7;
 				INFOPLIST_FILE = BeautifulGallery/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.budynandfriends.apps.BeautifulGallery;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -369,6 +370,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = AD6M7L74H7;
 				INFOPLIST_FILE = BeautifulGallery/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.budynandfriends.apps.BeautifulGallery;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		93B0156CA96AFE76FBDAEF75 /* libPods-BeautifulGalleryTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CDCC3F897AD27478CD4B47C6 /* libPods-BeautifulGalleryTests.a */; };
+		AFBCA9F01ECF420300FFBE5A /* GalleryCollectionModel+Networking.m in Sources */ = {isa = PBXBuildFile; fileRef = AFBCA9EF1ECF420300FFBE5A /* GalleryCollectionModel+Networking.m */; };
+		AFBCAA011ED0B91A00FFBE5A /* GalleryCollectionObject.m in Sources */ = {isa = PBXBuildFile; fileRef = AFBCAA001ED0B91A00FFBE5A /* GalleryCollectionObject.m */; };
 		AFFEEEFE1ECF317B00159090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFEEEFD1ECF317B00159090 /* main.m */; };
 		AFFEEF011ECF317B00159090 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFEEF001ECF317B00159090 /* AppDelegate.m */; };
 		AFFEEF071ECF317B00159090 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFFEEF051ECF317B00159090 /* Main.storyboard */; };
@@ -34,6 +36,11 @@
 		17B9B914DD87A4A590845154 /* libPods-BeautifulGallery.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BeautifulGallery.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		748A2C6AD012A6175F6BAE63 /* Pods-BeautifulGallery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeautifulGallery.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BeautifulGallery/Pods-BeautifulGallery.debug.xcconfig"; sourceTree = "<group>"; };
 		90D465F9066010A869B4449F /* Pods-BeautifulGalleryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeautifulGalleryTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BeautifulGalleryTests/Pods-BeautifulGalleryTests.release.xcconfig"; sourceTree = "<group>"; };
+		AFBCA9EE1ECF420300FFBE5A /* GalleryCollectionModel+Networking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GalleryCollectionModel+Networking.h"; sourceTree = "<group>"; };
+		AFBCA9EF1ECF420300FFBE5A /* GalleryCollectionModel+Networking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GalleryCollectionModel+Networking.m"; sourceTree = "<group>"; };
+		AFBCA9F61ECF440800FFBE5A /* GalleryCollectionModel_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryCollectionModel_Private.h; sourceTree = "<group>"; };
+		AFBCA9FF1ED0B91A00FFBE5A /* GalleryCollectionObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryCollectionObject.h; sourceTree = "<group>"; };
+		AFBCAA001ED0B91A00FFBE5A /* GalleryCollectionObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryCollectionObject.m; sourceTree = "<group>"; };
 		AFFEEEF91ECF317B00159090 /* BeautifulGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeautifulGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFFEEEFD1ECF317B00159090 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AFFEEEFF1ECF317B00159090 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -80,6 +87,23 @@
 				CDCC3F897AD27478CD4B47C6 /* libPods-BeautifulGalleryTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AFBCA9F91ECF446F00FFBE5A /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				AFBCA9EE1ECF420300FFBE5A /* GalleryCollectionModel+Networking.h */,
+				AFBCA9EF1ECF420300FFBE5A /* GalleryCollectionModel+Networking.m */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		AFBCA9FA1ECF447600FFBE5A /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				AFBCA9F61ECF440800FFBE5A /* GalleryCollectionModel_Private.h */,
+			);
+			name = Private;
 			sourceTree = "<group>";
 		};
 		AFFEEEF01ECF317B00159090 = {
@@ -147,8 +171,12 @@
 		AFFEEF281ECF36B500159090 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				AFBCA9FA1ECF447600FFBE5A /* Private */,
+				AFBCA9F91ECF446F00FFBE5A /* Networking */,
 				AFFEEF291ECF36DA00159090 /* GalleryCollectionModel.h */,
 				AFFEEF2A1ECF36DA00159090 /* GalleryCollectionModel.m */,
+				AFBCA9FF1ED0B91A00FFBE5A /* GalleryCollectionObject.h */,
+				AFBCAA001ED0B91A00FFBE5A /* GalleryCollectionObject.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -370,7 +398,9 @@
 				AFFEEF2B1ECF36DA00159090 /* GalleryCollectionModel.m in Sources */,
 				AFFEEF011ECF317B00159090 /* AppDelegate.m in Sources */,
 				AFFEEEFE1ECF317B00159090 /* main.m in Sources */,
+				AFBCAA011ED0B91A00FFBE5A /* GalleryCollectionObject.m in Sources */,
 				AFFEEF261ECF369600159090 /* GalleryCollectionCollectionViewController.m in Sources */,
+				AFBCA9F01ECF420300FFBE5A /* GalleryCollectionModel+Networking.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -579,6 +609,7 @@
 				AFFEEF1D1ECF317B00159090 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AFFEEF1E1ECF317B00159090 /* Build configuration list for PBXNativeTarget "BeautifulGalleryTests" */ = {
 			isa = XCConfigurationList;
@@ -587,6 +618,7 @@
 				AFFEEF201ECF317B00159090 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

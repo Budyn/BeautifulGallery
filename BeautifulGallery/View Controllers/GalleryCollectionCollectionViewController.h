@@ -6,7 +6,7 @@
 //  Copyright © 2017 Budyn&Friends. All rights reserved.
 //
 
-@import UIKit
+@import UIKit;
 
 @interface GalleryCollectionCollectionViewController : UICollectionViewController
 

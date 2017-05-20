@@ -21,6 +21,9 @@ static NSString * const reuseIdentifier = @"Cell";
 // MARK: Life Cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.model = [[GalleryCollectionModel alloc] init];
+    [self.model update];
+    
     [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
     
 }

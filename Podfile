@@ -6,8 +6,8 @@ target 'BeautifulGallery' do
   # use_frameworks!
 
   # Pods for BeautifulGallery
-  pod "JSONKit"
-  
+  pod 'AFNetworking', '~> 3.1'
+
   target 'BeautifulGalleryTests' do
     inherit! :search_paths
     # Pods for testing

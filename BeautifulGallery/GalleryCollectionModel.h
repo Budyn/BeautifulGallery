@@ -9,5 +9,8 @@
 #import <Foundation/Foundation.h>
 
 @interface GalleryCollectionModel : NSObject
+- (void)update;
+- (void)numberOfSections;
+- (void)numberOfItemsInSection:(NSUInteger)section;
 
 @end

@@ -32,6 +32,11 @@ static NSString * const reuseIdentifier = @"Cell";
     [super didReceiveMemoryWarning];
 }
 
+// MARK: Refresh action
+- (IBAction)refreshButtonTapped:(id)sender {
+    [self.model update];
+}
+
 // MARK: Navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
 
@@ -52,6 +57,9 @@ static NSString * const reuseIdentifier = @"Cell";
     
     return cell;
 }
+
+
+
 
 // MARK: UICollectionViewDelegate
 

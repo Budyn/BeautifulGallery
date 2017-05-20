@@ -36,6 +36,11 @@ const struct PublicFeedURLParameters URLParameter = {
                                                                 if (error) {
                                                                     NSLog(@"Error during download: %@", error.description);
                                                                 }
+                                                                
+                                                                if (responseObject) {
+                                                                    self.response = (NSDictionary *)responseObject;
+                                                                    [self createCollectionObjectsArray];
+                                                                }
                                                             }];
     [dataTask resume];
 }

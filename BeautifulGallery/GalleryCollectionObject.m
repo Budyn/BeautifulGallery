@@ -7,6 +7,7 @@
 //
 
 #import "GalleryCollectionObject.h"
+#import "GalleryCollectionObject+ResponseParsing.h"
 
 @implementation GalleryCollectionObject
 - (nullable instancetype)initWithProperties:(nullable NSDictionary *)properties {
@@ -14,7 +15,7 @@
     
     if (self) {
         if (properties.count) {
-            
+            [self completeWithResponseProperties:properties];
         }
     }
     

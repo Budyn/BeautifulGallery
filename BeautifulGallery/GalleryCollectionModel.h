@@ -10,7 +10,7 @@
 
 @interface GalleryCollectionModel : NSObject
 - (void)update;
-- (void)numberOfSections;
-- (void)numberOfItemsInSection:(NSUInteger)section;
-
+- (NSUInteger)numberOfSections;
+- (NSUInteger)numberOfItemsInSection:(NSUInteger)section;
+- (void)createCollectionObjectsArray;
 @end

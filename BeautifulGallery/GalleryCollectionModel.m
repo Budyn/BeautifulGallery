@@ -9,6 +9,7 @@
 #import "GalleryCollectionModel.h"
 #import "GalleryCollectionModel_Private.h"
 #import "GalleryCollectionModel+Networking.h"
+#import "GalleryCollectionObject.h"
 
 @implementation GalleryCollectionModel
 
@@ -27,15 +28,22 @@
 
 // MARK: Update Action
 - (void)update {
-    [self downloadLatestPictures];
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        [self downloadLatestPictures];
+    });
 }
 
-- (void)numberOfSections {
-    
+- (NSUInteger)numberOfSections {
+    return 10;
 }
 
-- (void)numberOfItemsInSection:(NSUInteger)section {
-    
+- (NSUInteger)numberOfItemsInSection:(NSUInteger)section {
+    return 10;
+}
+
+- (void)createCollectionObjectsArray {
+    GalleryCollectionObject *object = [[GalleryCollectionObject alloc] initWithProperties:[[self.response objectForKey:@"items"] firstObject]];
+    NSLog(@"%@", object.description);
 }
 
 @end

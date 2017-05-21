@@ -12,6 +12,8 @@
 		AFBCAA011ED0B91A00FFBE5A /* GalleryCollectionObject.m in Sources */ = {isa = PBXBuildFile; fileRef = AFBCAA001ED0B91A00FFBE5A /* GalleryCollectionObject.m */; };
 		AFBCAA041ED0C70200FFBE5A /* GalleryCollectionObject+ResponseParsing.m in Sources */ = {isa = PBXBuildFile; fileRef = AFBCAA031ED0C70200FFBE5A /* GalleryCollectionObject+ResponseParsing.m */; };
 		AFBCAA091ED0DB0B00FFBE5A /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFBCAA081ED0DB0B00FFBE5A /* Icons.xcassets */; };
+		AFBCAA131ED1D71B00FFBE5A /* ResponseParser.m in Sources */ = {isa = PBXBuildFile; fileRef = AFBCAA121ED1D71B00FFBE5A /* ResponseParser.m */; };
+		AFBCAA151ED1EFC200FFBE5A /* ResponseParserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AFBCAA141ED1EFC200FFBE5A /* ResponseParserTests.m */; };
 		AFFEEEFE1ECF317B00159090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFEEEFD1ECF317B00159090 /* main.m */; };
 		AFFEEF011ECF317B00159090 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFEEF001ECF317B00159090 /* AppDelegate.m */; };
 		AFFEEF071ECF317B00159090 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFFEEF051ECF317B00159090 /* Main.storyboard */; };
@@ -45,6 +47,9 @@
 		AFBCAA021ED0C70200FFBE5A /* GalleryCollectionObject+ResponseParsing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GalleryCollectionObject+ResponseParsing.h"; sourceTree = "<group>"; };
 		AFBCAA031ED0C70200FFBE5A /* GalleryCollectionObject+ResponseParsing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GalleryCollectionObject+ResponseParsing.m"; sourceTree = "<group>"; };
 		AFBCAA081ED0DB0B00FFBE5A /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Icons.xcassets; path = ../Icons.xcassets; sourceTree = "<group>"; };
+		AFBCAA111ED1D71B00FFBE5A /* ResponseParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResponseParser.h; sourceTree = "<group>"; };
+		AFBCAA121ED1D71B00FFBE5A /* ResponseParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResponseParser.m; sourceTree = "<group>"; };
+		AFBCAA141ED1EFC200FFBE5A /* ResponseParserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResponseParserTests.m; sourceTree = "<group>"; };
 		AFFEEEF91ECF317B00159090 /* BeautifulGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeautifulGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFFEEEFD1ECF317B00159090 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AFFEEEFF1ECF317B00159090 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -114,8 +119,18 @@
 			children = (
 				AFBCAA021ED0C70200FFBE5A /* GalleryCollectionObject+ResponseParsing.h */,
 				AFBCAA031ED0C70200FFBE5A /* GalleryCollectionObject+ResponseParsing.m */,
+				AFBCAA111ED1D71B00FFBE5A /* ResponseParser.h */,
+				AFBCAA121ED1D71B00FFBE5A /* ResponseParser.m */,
 			);
 			name = "JSON Parsing";
+			sourceTree = "<group>";
+		};
+		AFBCAA0A1ED1B29700FFBE5A /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				AFBCAA141ED1EFC200FFBE5A /* ResponseParserTests.m */,
+			);
+			name = Tests;
 			sourceTree = "<group>";
 		};
 		AFFEEEF01ECF317B00159090 = {
@@ -183,6 +198,7 @@
 		AFFEEF281ECF36B500159090 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				AFBCAA0A1ED1B29700FFBE5A /* Tests */,
 				AFBCAA071ED0C80600FFBE5A /* JSON Parsing */,
 				AFBCA9FA1ECF447600FFBE5A /* Private */,
 				AFBCA9F91ECF446F00FFBE5A /* Networking */,
@@ -415,6 +431,7 @@
 				AFBCAA041ED0C70200FFBE5A /* GalleryCollectionObject+ResponseParsing.m in Sources */,
 				AFFEEF261ECF369600159090 /* GalleryCollectionCollectionViewController.m in Sources */,
 				AFBCA9F01ECF420300FFBE5A /* GalleryCollectionModel+Networking.m in Sources */,
+				AFBCAA131ED1D71B00FFBE5A /* ResponseParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +440,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFFEEF171ECF317B00159090 /* BeautifulGalleryTests.m in Sources */,
+				AFBCAA151ED1EFC200FFBE5A /* ResponseParserTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

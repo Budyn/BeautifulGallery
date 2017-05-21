@@ -20,6 +20,6 @@
 @property (nullable, copy, nonatomic) NSString *link;
 @property (nullable, strong, nonatomic) NSDate *creationDate;
 @property (nullable, copy, nonatomic) NSString *info;
-@property (nullable, strong, nonatomic) NSArray *tags;
+@property (nullable, strong, nonatomic) NSString *tags;
 
 @end

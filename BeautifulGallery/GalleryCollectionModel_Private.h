@@ -6,7 +6,7 @@
 //  Copyright © 2017 Budyn&Friends. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 
 #import <AFNetworking.h>
 #import <UIKit+AFNetworking.h>

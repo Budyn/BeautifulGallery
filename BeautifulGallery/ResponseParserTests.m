@@ -6,8 +6,10 @@
 //  Copyright © 2017 Budyn&Friends. All rights reserved.
 //
 
-#import <XCTest/XCTest.h>
+@import XCTest;
+
 #import "ResponseParser.h"
+
 @interface ResponseParserTests : XCTestCase
 @property (strong, nonatomic) ResponseParser *parser;
 

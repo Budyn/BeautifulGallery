@@ -8,6 +8,7 @@
 
 #import "GalleryCollectionModel+Networking.h"
 #import "GalleryCollectionModel_Private.h"
+#import "GalleryCollectionObject.h"
 
 NSString * const kPublicFeedURL = @"https://api.flickr.com/services/feeds/photos_public.gne/";
 NSString * const kUserAPIKey = @"4e07423b7ab5fb6ef310a7e2d5373e36";
@@ -26,7 +27,7 @@ const struct PublicFeedURLParameters URLParameter = {
 
 
 @implementation GalleryCollectionModel(Networking)
-- (void)downloadLatestPictures {
+- (void)downloadLatestPublicFeed {
     NSString *URLString = [NSString stringWithFormat:@"%@?%@%@&%@&%@",kPublicFeedURL, URLParameter.apiKey, kUserAPIKey, URLParameter.formatJSON, URLParameter.noJSONCallBack];
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:URLString]];
     NSURLSessionDataTask *dataTask = [self.sessionManager dataTaskWithRequest:request
@@ -39,7 +40,6 @@ const struct PublicFeedURLParameters URLParameter = {
                                                                 
                                                                 if (responseObject) {
                                                                     self.response = (NSDictionary *)responseObject;
-                                                                    [self createCollectionObjectsArray];
                                                                 }
                                                             }];
     [dataTask resume];

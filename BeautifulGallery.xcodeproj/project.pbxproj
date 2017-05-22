@@ -14,12 +14,13 @@
 		AFBCAA091ED0DB0B00FFBE5A /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFBCAA081ED0DB0B00FFBE5A /* Icons.xcassets */; };
 		AFBCAA131ED1D71B00FFBE5A /* ResponseParser.m in Sources */ = {isa = PBXBuildFile; fileRef = AFBCAA121ED1D71B00FFBE5A /* ResponseParser.m */; };
 		AFBCAA151ED1EFC200FFBE5A /* ResponseParserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AFBCAA141ED1EFC200FFBE5A /* ResponseParserTests.m */; };
+		AFBCAA1B1ED25C0B00FFBE5A /* GalleryCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AFBCAA1A1ED25C0B00FFBE5A /* GalleryCollectionViewCell.m */; };
 		AFFEEEFE1ECF317B00159090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFEEEFD1ECF317B00159090 /* main.m */; };
 		AFFEEF011ECF317B00159090 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFEEF001ECF317B00159090 /* AppDelegate.m */; };
 		AFFEEF071ECF317B00159090 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFFEEF051ECF317B00159090 /* Main.storyboard */; };
 		AFFEEF0C1ECF317B00159090 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFFEEF0A1ECF317B00159090 /* LaunchScreen.storyboard */; };
 		AFFEEF171ECF317B00159090 /* BeautifulGalleryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFEEF161ECF317B00159090 /* BeautifulGalleryTests.m */; };
-		AFFEEF261ECF369600159090 /* GalleryCollectionCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFEEF251ECF369600159090 /* GalleryCollectionCollectionViewController.m */; };
+		AFFEEF261ECF369600159090 /* GalleryCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFEEF251ECF369600159090 /* GalleryCollectionViewController.m */; };
 		AFFEEF2B1ECF36DA00159090 /* GalleryCollectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AFFEEF2A1ECF36DA00159090 /* GalleryCollectionModel.m */; };
 		D24DB331D8295179C5A3B987 /* libPods-BeautifulGallery.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B9B914DD87A4A590845154 /* libPods-BeautifulGallery.a */; };
 /* End PBXBuildFile section */
@@ -50,6 +51,9 @@
 		AFBCAA111ED1D71B00FFBE5A /* ResponseParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResponseParser.h; sourceTree = "<group>"; };
 		AFBCAA121ED1D71B00FFBE5A /* ResponseParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResponseParser.m; sourceTree = "<group>"; };
 		AFBCAA141ED1EFC200FFBE5A /* ResponseParserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResponseParserTests.m; sourceTree = "<group>"; };
+		AFBCAA161ED2469000FFBE5A /* GalleryCollectionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryCollectionDelegate.h; sourceTree = "<group>"; };
+		AFBCAA191ED25C0B00FFBE5A /* GalleryCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryCollectionViewCell.h; sourceTree = "<group>"; };
+		AFBCAA1A1ED25C0B00FFBE5A /* GalleryCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryCollectionViewCell.m; sourceTree = "<group>"; };
 		AFFEEEF91ECF317B00159090 /* BeautifulGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeautifulGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFFEEEFD1ECF317B00159090 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AFFEEEFF1ECF317B00159090 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -60,8 +64,8 @@
 		AFFEEF121ECF317B00159090 /* BeautifulGalleryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BeautifulGalleryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFFEEF161ECF317B00159090 /* BeautifulGalleryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeautifulGalleryTests.m; sourceTree = "<group>"; };
 		AFFEEF181ECF317B00159090 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AFFEEF241ECF369600159090 /* GalleryCollectionCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GalleryCollectionCollectionViewController.h; path = "View Controllers/GalleryCollectionCollectionViewController.h"; sourceTree = "<group>"; };
-		AFFEEF251ECF369600159090 /* GalleryCollectionCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GalleryCollectionCollectionViewController.m; path = "View Controllers/GalleryCollectionCollectionViewController.m"; sourceTree = "<group>"; };
+		AFFEEF241ECF369600159090 /* GalleryCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GalleryCollectionViewController.h; path = "View Controllers/GalleryCollectionViewController.h"; sourceTree = "<group>"; };
+		AFFEEF251ECF369600159090 /* GalleryCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GalleryCollectionViewController.m; path = "View Controllers/GalleryCollectionViewController.m"; sourceTree = "<group>"; };
 		AFFEEF291ECF36DA00159090 /* GalleryCollectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryCollectionModel.h; sourceTree = "<group>"; };
 		AFFEEF2A1ECF36DA00159090 /* GalleryCollectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryCollectionModel.m; sourceTree = "<group>"; };
 		BE3B2EE029BFF2BBBA03C743 /* Pods-BeautifulGallery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeautifulGallery.release.xcconfig"; path = "Pods/Target Support Files/Pods-BeautifulGallery/Pods-BeautifulGallery.release.xcconfig"; sourceTree = "<group>"; };
@@ -133,6 +137,22 @@
 			name = Tests;
 			sourceTree = "<group>";
 		};
+		AFBCAA1C1ED25C1600FFBE5A /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Delegates;
+			sourceTree = "<group>";
+		};
+		AFBCAA1D1ED25C2100FFBE5A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AFBCAA191ED25C0B00FFBE5A /* GalleryCollectionViewCell.h */,
+				AFBCAA1A1ED25C0B00FFBE5A /* GalleryCollectionViewCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		AFFEEEF01ECF317B00159090 = {
 			isa = PBXGroup;
 			children = (
@@ -189,8 +209,11 @@
 		AFFEEF271ECF369D00159090 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				AFFEEF241ECF369600159090 /* GalleryCollectionCollectionViewController.h */,
-				AFFEEF251ECF369600159090 /* GalleryCollectionCollectionViewController.m */,
+				AFBCAA1D1ED25C2100FFBE5A /* Views */,
+				AFBCAA1C1ED25C1600FFBE5A /* Delegates */,
+				AFFEEF241ECF369600159090 /* GalleryCollectionViewController.h */,
+				AFFEEF251ECF369600159090 /* GalleryCollectionViewController.m */,
+				AFBCAA161ED2469000FFBE5A /* GalleryCollectionDelegate.h */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -425,11 +448,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFFEEF2B1ECF36DA00159090 /* GalleryCollectionModel.m in Sources */,
+				AFBCAA1B1ED25C0B00FFBE5A /* GalleryCollectionViewCell.m in Sources */,
 				AFFEEF011ECF317B00159090 /* AppDelegate.m in Sources */,
 				AFFEEEFE1ECF317B00159090 /* main.m in Sources */,
 				AFBCAA011ED0B91A00FFBE5A /* GalleryCollectionObject.m in Sources */,
 				AFBCAA041ED0C70200FFBE5A /* GalleryCollectionObject+ResponseParsing.m in Sources */,
-				AFFEEF261ECF369600159090 /* GalleryCollectionCollectionViewController.m in Sources */,
+				AFFEEF261ECF369600159090 /* GalleryCollectionViewController.m in Sources */,
 				AFBCA9F01ECF420300FFBE5A /* GalleryCollectionModel+Networking.m in Sources */,
 				AFBCAA131ED1D71B00FFBE5A /* ResponseParser.m in Sources */,
 			);

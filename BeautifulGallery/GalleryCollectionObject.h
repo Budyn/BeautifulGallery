@@ -6,7 +6,8 @@
 //  Copyright © 2017 Budyn&Friends. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
+@import UIKit;
 
 @interface GalleryCollectionObject : NSObject
 - (nullable instancetype)initWithProperties:(nullable NSDictionary *)properties NS_DESIGNATED_INITIALIZER;
@@ -21,5 +22,6 @@
 @property (nullable, strong, nonatomic) NSDate *creationDate;
 @property (nullable, copy, nonatomic) NSString *info;
 @property (nullable, strong, nonatomic) NSString *tags;
+@property (nullable, strong, nonatomic) UIImageView *imageView;
 
 @end

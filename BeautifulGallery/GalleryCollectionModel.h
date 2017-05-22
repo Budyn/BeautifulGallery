@@ -6,11 +6,17 @@
 //  Copyright © 2017 Budyn&Friends. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
+@import UIKit;
+
+#import "GalleryCollectionDelegate.h"
 
 @interface GalleryCollectionModel : NSObject
+@property (weak, nonatomic) id <GalleryCollectionDelegate> delegate;
+
 - (void)update;
 - (NSUInteger)numberOfSections;
 - (NSUInteger)numberOfItemsInSection:(NSUInteger)section;
-- (void)createCollectionObjectsArray;
+- (UIImageView *)imageForCellAtIndex:(NSIndexPath *)indexPath;
+
 @end

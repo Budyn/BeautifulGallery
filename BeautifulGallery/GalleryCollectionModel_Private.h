@@ -9,9 +9,13 @@
 #import <Foundation/Foundation.h>
 
 #import <AFNetworking.h>
+#import <UIKit+AFNetworking.h>
+
+@class GalleryCollectionObject;
 
 @interface GalleryCollectionModel()
 @property (strong, nonatomic, nullable) AFURLSessionManager *sessionManager;
 @property (strong, nonatomic, nullable) NSDictionary *response;
+@property (strong, nonatomic, nullable) NSMutableArray <GalleryCollectionObject *> *objects;
 
 @end

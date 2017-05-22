@@ -11,7 +11,9 @@
 FOUNDATION_EXPORT NSString * const kPublicFeedURL;
 FOUNDATION_EXPORT NSString * const kUserAPIKey;
 
+@class GalleryCollectionObject;
+
 @interface GalleryCollectionModel(Networking)
-- (void)downloadLatestPictures;
+- (void)downloadLatestPublicFeed;
 
 @end
